@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* COMMON */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable.css");
+
+body{
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  word-spacing: -0.1em;
+  color: #191919;
+}
+
+img{display: block;}
+a{font-weight: 500; text-decoration: none; color: #191919;}
+h3{font-size: 72px; line-height: 1.2;}
+h4{font-size: 60px; line-height: 1.2;}
+h5{font-size: 28px; line-height: 1.6;}
+
+.bold{font-weight: 500;}
+.ex_bold{font-weight: 700;}
+
+.wrap{width: 100%; position: relative; overflow: hidden;}
+.inner{width: 1152px; margin: 0 auto;}
+
+
+/* HEADER */
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: #fff;
+}
+header .inner{
+  height: 100px;
+  margin: 0 auto;
+  position: relative;}
+
+header .logo img{
+  height: 40px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+header .material-symbols-outlined{
+  font-size: 48px;
+  line-height: 100px;
+  right: 0;
+  position: absolute;
+}
+
+/* **************************************** *
+ * LAGE DEVICES (769-1200) 
+ * **************************************** */
+@media only screen and (max-width: 1200px){
+  /* COMMON */
+  h3{font-size: 60px;}
+  h4{font-size: 52px;}
+  h5{font-size: 24px;}
+  .inner{width: 85%;}
+
+  /* HEADER */
+  header .inner{width: 90%;}
+  header .logo img{height: 36px;}
+  header .material-symbols-outlined{font-size: 40px;}
+}
+
+/* **************************************** *
+ * MEDIUM DEVICES (481-768) 
+ * **************************************** */
+@media only screen and (max-width: 768px){
+  /* COMMON */
+  h3{font-size: 52px;}
+  h4{font-size: 44px;}
+  h5{font-size: 20px;}
+}
+
+/* **************************************** *
+ * SMALL DEVICES (-480) 
+ * **************************************** */
+@media only screen and (max-width: 480px){
+  /* COMMON */
+  h3{font-size: 40px;}
+  h4{font-size: 36px;}
+  h5{font-size: 18px;}
+  /* .inner{width: 85%;} */
+
+  /* HEADER */
+  header .logo img{height: 28px;}
+  header .material-symbols-outlined{font-size: 32px;}
+}    
